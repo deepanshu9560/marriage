@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .card .main-card {
+            width: 60%;
+            border-radius: 7px;
+            /* background-color:pink; */
+            background: linear-gradient(to bottom, pink, rgb(243, 155, 170), rgb(238, 55, 86));
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            padding-bottom: 100px;
+            box-shadow: 0 0 20px rgb(66, 66, 66);
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .card {
+            background-color: rgb(175, 173, 173);
+            padding-top: 20px;
+            /* height: 100vh; */
+            width: 100%;
+            padding-bottom: 30px;
+        }
+
+        .navbar .nav-box1 {
+            width: 30%;
+            padding-top: 40px;
+            padding-left: 40px;
+            /* background-color: blue; */
+        }
+
+        .navbar .nav-box2 {
+            width: 70%;
+            font-family: 'Baloo Bhai 2', cursive;
+            /* background-color: palevioletred; */
+            padding-top: 35px;
+            padding-right: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            /* border-bottom: 2px dashed black; */
+        }
+
+        .navbar .nav-box2 h1 {
+            font-size: 17px;
+        }
+
+        .navbar::before,
+        .navbar::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .navbar .nav-box {
+            float: left;
+        }
+
+        .nav-sec {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .nav-sec h1 {
+            margin-top: 20px;
+            font-size: 17px;
+        }
+
+        .nav-secMainBox {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .nav-secMainBox .nav-sec-box img {
+            width: 60px;
+            /* filter: invert(1); */
+        }
+
+        .nav-secMainBox .nav-sec-box2 {
+            text-align: center;
+        }
+
+        .nav-secMainBox .nav-sec-box2 h1 {
+            margin: 0;
+        }
+
+        .ma {
+            /* background-color: blue; */
+            height: 160px;
+            width: 60%;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgb(66, 66, 66);
+            border-radius: 7px;
+        }
+
+        .ma iframe {
+            border-radius: 7px;
+            outline: none;
+        }
+
+
+        .nav-sec-box3 img {
+            transform: rotatey(180deg);
+        }
+        .rsvp:nth-child(1){
+            text-align: center;
+        }
+
+        .mele{
+            text-align: right;
+        }
+
+
+        @media (max-width: 900px) {
+            .card .main-card {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 555px) {
+            .card .main-card {
+                width: 100%;
+            }
+
+            .navbar .nav-box2 {
+                display: block;
+                padding-right: 0;
+                border-bottom: 1px dashed black;
+            }
+
+            .navbar .nav-box2 h1 {
+                font-size: 13.9px;
+            }
+
+            .navbar .nav-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                float: none;
+            }
+
+            .navbar .nav-box1 {
+                padding-left: 0;
+            }
+
+            .ma {
+                width: 100%;
+            }
+
+            .card {
+                background-color: whitesmoke;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="main-card">
+            <nav class="navbar">
+                <div class="nav-box1 nav-box">
+                    <img src="wedding.png" alt="" width="60px">
+                </div>
+                <div class="nav-box2 nav-box">
+                    <h1>In the name of Allah, the Most Beneficent, the Most Merciful</h1>
+                    <p>Grand s/o Mr late jeevan ali</p>
+                    <p>Request the honour of your presence</p>
+                    <p>At the wedding ceremony of their beloved son</p>
+                </div>
+            </nav>
+            <section class="nav-sec">
+                <h1>at the Wedding ceremony of their beloved son</h1>
+                <div class="nav-secMainBox">
+                    <div class="nav-sec-box1 nav-sec-box">
+                        <img src='rose.png' alt="flower">
+                    </div>
+                    <div class="nav-sec-box2 nav-sec-box">
+                        <h1>Israil khan</h1>
+                        <h4>with</h4>
+                        <h1>Firdaus</h1>
+                        <p>Daughter of Mr & Mrs Jung Mohammad</p>
+                        <p>InshAllah On Saturday 6th February 2021</p>
+                        <p>At Imperial garden railway crossing molana azadnagar jamalpur aligarh</p>
+                        <p>Please join the baraat at 131 jatpura bulandshahr</p>
+                        <p>For sehra bandhai ceremony at 8:00am</p>
+                        <p>Departure of baraat 9:00am</p>
+                    </div>
+                    <div class="nav-sec-box3 nav-sec-box">
+                        <img src='rose.png' alt="flower">
+                    </div>
+                    <!-- <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.9705972261568!2d78.07715751548525!3d27.933546622120616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a51057edf4d5%3A0x461ddde71aee4a2a!2sImperial%20Garden!5e0!3m2!1sen!2sin!4v1610980567896!5m2!1sen!2sin">location</a> -->
+                </div>
+            </section>
+            <section class="rsvp">                  
+                <p>R.S.V.P</p>
+                <p>Salim khan,Shamim khan,Aslam khan,</p>
+                <p>Asgar khan,Shamshad khan,Chaman khan.</p>
+            </section>
+            <section class="mele">
+                mele chacha ki shadi main jalul jalul ana
+            </section>
+        </div>
+        <section class="ma">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.9705972261568!2d78.07715751548525!3d27.933546622120616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a51057edf4d5%3A0x461ddde71aee4a2a!2sImperial%20Garden!5e0!3m2!1sen!2sin!4v1610980567896!5m2!1sen!2sin"
+                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </section>
+    </div>
+</body>
+
+</html>
